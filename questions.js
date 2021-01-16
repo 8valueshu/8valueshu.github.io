@@ -54,7 +54,7 @@ questions = [
         }
     },
     {
-        "question": "A javak elosztása mindenkitől a képességeinek megfelelően, mindenkinek a szüksége szerint történjék.",
+        "question": "A javak elosztása mindenkitől a képességeinek megfelelően, mindenkinek a szüksége szerint történjen.",
         "effect": {
             "econ": 10,
             "dipl": 0,
@@ -72,7 +72,7 @@ questions = [
         }
     },
     {
-        "question": "Jobban meg kéne adóztatni a gazdagokat, hogy a szegényeknek jobb körülményeket tudjunk biztosítani.",
+        "question": "Jobban meg kellene adóztatni a gazdagokat, hogy a szegényeknek jobb körülményeket tudjunk biztosítani.",
         "effect": {
             "econ": 10,
             "dipl": 0,
@@ -90,7 +90,7 @@ questions = [
         }
     },
     {
-        "question": "Az alapvető közszolgáltatásoknak mint az utaknak vagy a villanynak az állam tulajdonában van a helye.",
+        "question": "Az alapvető közszolgáltatásoknak - mint az utaknak vagy a villanynak - az állam tulajdonában van a helye.",
         "effect": {
             "econ": 10,
             "dipl": 0,
@@ -108,7 +108,7 @@ questions = [
         }
     },
     {
-        "question": "Azok akik meg tudják maguknak engedni jogosultak magasabb szintű egészségügyi ellátásra.",
+        "question": "Azok, akik meg tudják maguknak engedni, jogosultak magasabb szintű egészségügyi ellátásra.",
         "effect": {
             "econ": -10,
             "dipl": 0,
@@ -234,7 +234,7 @@ questions = [
         }
     },
     {
-        "question": "A kormányoknak felelőseknek kellene lennie a nemzetközi közösség felé.",
+        "question": "A kormányoknak felelősséggel kellene tartozniuk a nemzetközi közösség felé.",
         "effect": {
             "econ": 0,
             "dipl": 10,
@@ -324,7 +324,7 @@ questions = [
         }
     },
     {
-        "question": "Politikai véleménytől függetlenül fontos hogy saját országunk oldalán álljunk.",
+        "question": "Politikai véleménytől függetlenül fontos, hogy saját országunk oldalán álljunk.",
         "effect": {
             "econ": 0,
             "dipl": -10,
@@ -351,7 +351,7 @@ questions = [
         }
     },
     {
-        "question": "Fontos hogy a kormány még akkor is kövesse a többség véleményét ha az esetleg helytelen.",
+        "question": "Fontos, hogy a kormány még akkor is kövesse a többség véleményét ha az esetleg helytelen.",
         "effect": {
             "econ": 0,
             "dipl": 0,
@@ -477,7 +477,7 @@ questions = [
         }
     },
     {
-        "question": "Az észszerűség fontosabb mint a kultúránk fenntartása.",
+        "question": "Az észszerűség fontosabb, mint a kultúránk fenntartása.",
         "effect": {
             "econ": 0,
             "dipl": 0,
@@ -522,7 +522,7 @@ questions = [
         }
     },
     {
-        "question": "Ha egyáltalán befogadjuk a migránsokat, fontos asszimilálnunk őket kultúránkba.",
+        "question": "Ha bevándorlókat fogadunk be, azt csak azzal a feltétellel tegyük meg, hogy asszimilálódnak kultúránkba.",
         "effect": {
             "econ": 0,
             "dipl": 0,
@@ -576,7 +576,7 @@ questions = [
         }
     },
     {
-        "question": "Minden áron a haladást üldözni veszélyes.",
+        "question": "Mindenáron a haladást hajszolni veszélyes.",
         "effect": {
             "econ": 0,
             "dipl": 0,
