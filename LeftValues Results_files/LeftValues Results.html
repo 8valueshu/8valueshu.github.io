@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <style class="darkreader darkreader--fallback" media="screen"></style>
+    <style class="darkreader darkreader--text" media="screen"></style>
+    <style class="darkreader darkreader--invert" media="screen">
+      .jfk-bubble.gtx-bubble, .captcheck_answer_label > input + img, span#closed_text > img[src^="https://www.gstatic.com/images/branding/googlelogo"], embed[type="application/pdf"]
+      {
+        filter: invert(100%) hue-rotate(180deg) brightness(95%) contrast(90%) !important;
+      }
+    </style>
+    <style class="darkreader darkreader--inline" media="screen">
+      [data-darkreader-inline-bgcolor] {
+        background-color: var(--darkreader-inline-bgcolor) !important;
+      }
+      [data-darkreader-inline-bgimage] {
+        background-image: var(--darkreader-inline-bgimage) !important;
+      }
+      [data-darkreader-inline-border] {
+        border-color: var(--darkreader-inline-border) !important;
+      }
+      [data-darkreader-inline-border-bottom] {
+        border-bottom-color: var(--darkreader-inline-border-bottom) !important;
+      }
+      [data-darkreader-inline-border-left] {
+        border-left-color: var(--darkreader-inline-border-left) !important;
+      }
+      [data-darkreader-inline-border-right] {
+        border-right-color: var(--darkreader-inline-border-right) !important;
+      }
+      [data-darkreader-inline-border-top] {
+        border-top-color: var(--darkreader-inline-border-top) !important;
+      }
+      [data-darkreader-inline-boxshadow] {
+        box-shadow: var(--darkreader-inline-boxshadow) !important;
+      }
+      [data-darkreader-inline-color] {
+        color: var(--darkreader-inline-color) !important;
+      }
+      [data-darkreader-inline-fill] {
+        fill: var(--darkreader-inline-fill) !important;
+      }
+      [data-darkreader-inline-stroke] {
+        stroke: var(--darkreader-inline-stroke) !important;
+      }
+      [data-darkreader-inline-outline] {
+        outline-color: var(--darkreader-inline-outline) !important;
+      }
+      [data-darkreader-inline-stopcolor] {
+        stop-color: var(--darkreader-inline-stopcolor) !important;
+      }
+    </style>
+    <style class="darkreader darkreader--variables" media="screen">
+      :root {
+        --darkreader-neutral-background: #121415;
+        --darkreader-neutral-text: #cdc9c5;
+        --darkreader-selection-background: #0049a2;
+        --darkreader-selection-text: #dcdbd8;
+      }
+    </style>
+    <script class="darkreader darkreader--proxy">
+      (function injectProxy() {
+        document.dispatchEvent(
+          new CustomEvent("__darkreader__inlineScriptsAllowed")
+        );
+
+        const addRuleDescriptor = Object.getOwnPropertyDescriptor(
+          CSSStyleSheet.prototype,
+          "addRule"
+        );
+
+        const insertRuleDescriptor = Object.getOwnPropertyDescriptor(
+          CSSStyleSheet.prototype,
+          "insertRule"
+        );
+
+        const deleteRuleDescriptor = Object.getOwnPropertyDescriptor(
+          CSSStyleSheet.prototype,
+          "deleteRule"
+        );
+
+        const removeRuleDescriptor = Object.getOwnPropertyDescriptor(
+          CSSStyleSheet.prototype,
+          "removeRule"
+        );
+
+        const cleanUp = () => {
+          Object.defineProperty(
+            CSSStyleSheet.prototype,
+            "addRule",
+            addRuleDescriptor
+          );
+
+          Object.defineProperty(
+            CSSStyleSheet.prototype,
+            "insertRule",
+            insertRuleDescriptor
+          );
+
+          Object.defineProperty(
+            CSSStyleSheet.prototype,
+            "deleteRule",
+            deleteRuleDescriptor
+          );
+
+          Object.defineProperty(
+            CSSStyleSheet.prototype,
+            "removeRule",
+            removeRuleDescriptor
+          );
+
+          document.removeEventListener("__darkreader__cleanUp", cleanUp);
+
+          document.removeEventListener(
+            "__darkreader__addUndefinedResolver",
+            addUndefinedResolver
+          );
+        };
+
+        const addUndefinedResolver = (e) => {
+          customElements.whenDefined(e.detail.tag).then(() => {
+            document.dispatchEvent(
+              new CustomEvent("__darkreader__isDefined", {
+                detail: { tag: e.detail.tag },
+              })
+            );
+          });
+        };
+
+        document.addEventListener("__darkreader__cleanUp", cleanUp);
+
+        document.addEventListener(
+          "__darkreader__addUndefinedResolver",
+          addUndefinedResolver
+        );
+
+        const updateSheetEvent = new Event("__darkreader__updateSheet");
+
+        function proxyAddRule(selector, style, index) {
+          addRuleDescriptor.value.call(this, selector, style, index);
+
+          if (
+            this.ownerNode &&
+            !this.ownerNode.classList.contains("darkreader")
+          ) {
+            this.ownerNode.dispatchEvent(updateSheetEvent);
+          }
+
+          return -1;
+        }
+
+        function proxyInsertRule(rule, index) {
+          const returnValue = insertRuleDescriptor.value.call(
+            this,
+            rule,
+            index
+          );
+
+          if (
+            this.ownerNode &&
+            !this.ownerNode.classList.contains("darkreader")
+          ) {
+            this.ownerNode.dispatchEvent(updateSheetEvent);
+          }
+
+          return returnValue;
+        }
+
+        function proxyDeleteRule(index) {
+          deleteRuleDescriptor.value.call(this, index);
+
+          if (
+            this.ownerNode &&
+            !this.ownerNode.classList.contains("darkreader")
+          ) {
+            this.ownerNode.dispatchEvent(updateSheetEvent);
+          }
+        }
+
+        function proxyRemoveRule(index) {
+          removeRuleDescriptor.value.call(this, index);
+
+          if (
+            this.ownerNode &&
+            !this.ownerNode.classList.contains("darkreader")
+          ) {
+            this.ownerNode.dispatchEvent(updateSheetEvent);
+          }
+        }
+
+        Object.defineProperty(
+          CSSStyleSheet.prototype,
+          "addRule",
+          Object.assign({}, addRuleDescriptor, { value: proxyAddRule })
+        );
+
+        Object.defineProperty(
+          CSSStyleSheet.prototype,
+          "insertRule",
+          Object.assign({}, insertRuleDescriptor, { value: proxyInsertRule })
+        );
+
+        Object.defineProperty(
+          CSSStyleSheet.prototype,
+          "deleteRule",
+          Object.assign({}, deleteRuleDescriptor, { value: proxyDeleteRule })
+        );
+
+        Object.defineProperty(
+          CSSStyleSheet.prototype,
+          "removeRule",
+          Object.assign({}, removeRuleDescriptor, { value: proxyRemoveRule })
+        );
+      })();
+    </script>
+    <style class="darkreader darkreader--user-agent" media="screen">
+      html {
+        background-color: #17191a !important;
+      }
+      html,
+      body,
+      input,
+      textarea,
+      select,
+      button {
+        background-color: #17191a;
+      }
+      html,
+      body,
+      input,
+      textarea,
+      select,
+      button {
+        border-color: #6d6659;
+        color: #dcdbd8;
+      }
+      a {
+        color: #308af2;
+      }
+      table {
+        border-color: #505659;
+      }
+      ::placeholder {
+        color: #a9a299;
+      }
+      input:-webkit-autofill,
+      textarea:-webkit-autofill,
+      select:-webkit-autofill {
+        background-color: #515600 !important;
+        color: #dcdbd8 !important;
+      }
+      ::-webkit-scrollbar {
+        background-color: #1e2122;
+        color: #a29c91;
+      }
+      ::-webkit-scrollbar-thumb {
+        background-color: #424649;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background-color: #53595d;
+      }
+      ::-webkit-scrollbar-thumb:active {
+        background-color: #444a4d;
+      }
+      ::-webkit-scrollbar-corner {
+        background-color: #17191a;
+      }
+      * {
+        scrollbar-color: #424649 #1e2122;
+      }
+      ::selection {
+        background-color: #0049a2 !important;
+        color: #dcdbd8 !important;
+      }
+      ::-moz-selection {
+        background-color: #0049a2 !important;
+        color: #dcdbd8 !important;
+      }
+    </style>
+    <link href="LeftValues%20Results_files/css.css" rel="stylesheet" />
+    <link
+      href="LeftValues%20Results_files/style.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <style class="darkreader darkreader--sync" media="screen"></style>
+    <title>LeftValues Results</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://leftvalues.github.io/icon.png"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="https://leftvalues.github.io/icon.png"
+    />
+    <meta charset="utf-8" />
+    <script
+      type="application/javascript"
+      src="LeftValues%20Results_files/ideologies.js"
+    ></script>
+    <meta name="darkreader" content="171de0a22cc2c294b7d822877957ef50" />
+    <style class="darkreader darkreader--override" media="screen">
+      .vimvixen-hint {
+        background-color: #754f00 !important;
+        border-color: #cda712 !important;
+        color: #e7dcbe !important;
+      }
+      ::placeholder {
+        opacity: 0.5 !important;
+      }
+    </style>
+  </head>
+
+  <body class="__i18n-en">
+    <h1>LeftValues</h1>
+    <select id="langPicker">
+      <option value="en" selected="selected">english</option>
+      <option value="es">español</option>
+      <option value="de">deutsch</option>
+      <option value="cn">简体中文</option>
+      <option value="ko">한국어</option>
+      <option value="pt">português</option>
+      <option value="ru">ру́сский</option>
+      <option value="sh">srpskohrvatski</option>
+      <option value="pl">polski</option>
+      <option value="fr">français</option>
+    </select>
+    <hr />
+
+    <h1 data-i18n="result_h1">Results</h1>
+
+    <h2><span class="weight-300" id="a-label"></span></h2>
+    <div class="axis">
+      <img
+        id="img-revolution"
+        src="LeftValues%20Results_files/revolution.png"
+        height="128pt"
+      />
+      <div class="bar revolution" id="bar-revolution">
+        <div class="text-wrapper" id="revolution">NaN%</div>
+      </div>
+      <div class="bar reform" id="bar-reform">
+        <div class="text-wrapper" id="reform">NaN%</div>
+      </div>
+      <img
+        id="img-reform"
+        src="LeftValues%20Results_files/reform.png"
+        height="128pt"
+      />
+    </div>
+    <h2><span class="weight-300" id="b-label"></span></h2>
+    <div class="axis">
+      <img
+        id="img-scientific"
+        src="LeftValues%20Results_files/scientific.png"
+        height="128pt"
+      />
+      <div class="bar scientific" id="bar-scientific">
+        <div class="text-wrapper" id="scientific">NaN%</div>
+      </div>
+      <div class="bar utopian" id="bar-utopian">
+        <div class="text-wrapper" id="utopian">NaN%</div>
+      </div>
+      <img
+        id="img-utopian"
+        src="LeftValues%20Results_files/utopian.png"
+        height="128pt"
+      />
+    </div>
+    <h2><span class="weight-300" id="c-label"></span></h2>
+    <div class="axis">
+      <img
+        id="img-central"
+        src="LeftValues%20Results_files/central.png"
+        height="128pt"
+      />
+      <div class="bar central" id="bar-central">
+        <div class="text-wrapper" id="central">NaN%</div>
+      </div>
+      <div class="bar decentral" id="bar-decentral">
+        <div class="text-wrapper" id="decentral">NaN%</div>
+      </div>
+      <img
+        id="img-decentral"
+        src="LeftValues%20Results_files/decentral.png"
+        height="128pt"
+      />
+    </div>
+    <h2><span class="weight-300" id="d-label"></span></h2>
+    <div class="axis">
+      <img
+        id="img-international"
+        src="LeftValues%20Results_files/international.png"
+        height="128pt"
+      />
+      <div class="bar international" id="bar-international">
+        <div class="text-wrapper" id="international">NaN%</div>
+      </div>
+      <div class="bar national" id="bar-national">
+        <div class="text-wrapper" id="national">NaN%</div>
+      </div>
+      <img
+        id="img-national"
+        src="LeftValues%20Results_files/national.png"
+        height="128pt"
+      />
+    </div>
+    <h2><span class="weight-300" id="e-label"></span></h2>
+    <div class="axis">
+      <img
+        id="img-party"
+        src="LeftValues%20Results_files/party.png"
+        height="128pt"
+      />
+      <div class="bar party" id="bar-party">
+        <div class="text-wrapper" id="party">NaN%</div>
+      </div>
+      <div class="bar union" id="bar-union">
+        <div class="text-wrapper" id="union">NaN%</div>
+      </div>
+      <img
+        id="img-union"
+        src="LeftValues%20Results_files/union.png"
+        height="128pt"
+      />
+    </div>
+    <h2><span class="weight-300" id="f-label"></span></h2>
+    <div class="axis">
+      <img
+        id="img-industry"
+        src="LeftValues%20Results_files/industry.png"
+        height="128pt"
+      />
+      <div class="bar industry" id="bar-industry">
+        <div class="text-wrapper" id="industry">NaN%</div>
+      </div>
+      <div class="bar ecology" id="bar-ecology">
+        <div class="text-wrapper" id="ecology">NaN%</div>
+      </div>
+      <img
+        id="img-ecology"
+        src="LeftValues%20Results_files/ecology.png"
+        height="128pt"
+      />
+    </div>
+    <h2><span class="weight-300" id="g-label"></span></h2>
+    <div class="axis">
+      <img
+        id="img-conservative"
+        src="LeftValues%20Results_files/conservative.png"
+        height="128pt"
+      />
+      <div class="bar conservative" id="bar-conservative">
+        <div class="text-wrapper" id="conservative">NaN%</div>
+      </div>
+      <div class="bar progressive" id="bar-progressive">
+        <div class="text-wrapper" id="progressive">NaN%</div>
+      </div>
+      <img
+        id="img-progressive"
+        src="LeftValues%20Results_files/progressive.png"
+        height="128pt"
+      />
+    </div>
+    <h2 data-i18n="result_h2_match">
+      Closest Match:
+      <span class="weight-300" id="ideology-label">Marxism-Leninism</span>
+    </h2>
+    <h3>
+      <span class="weight-300" id="ideodesc-label"
+        >Marxism-Leninism is a form of Marxism that was forged in the 20th
+        century in the Soviet Union. Marxist-Leninists heavily favor the use of
+        a communist political party as the platform for both achieving
+        revolution and establishing socialism. Many Marxist-Leninists are
+        somewhat more nationalistic and patriotic than many other Marxists, and
+        may favor industrial progress over environmental goals.</span
+      >
+    </h3>
+    <p data-i18n="result_url">
+      <br />You can send these results by copying and pasting the URL at the top
+      of the page or using the image below.
+    </p>
+
+    <h2 data-i18n="result_h2_next_matches">Next closest matches</h2>
+    <p data-i18n="next_matches_percent">
+      With your closest match as 100% and farthest as 0%, here is how closely
+      you matched the other ideologies.
+    </p>
+
+    <dl id="next-matches">
+      <dt>Orthodox Marxism: NaN%</dt>
+      <dd>
+        Orthodox Marxism is a form of Marxism that adopts views that conform to
+        Marxist theory as it was originally written, particularily on the topic
+        of dialectical materialism. Orthodox Marxists are highly revolutionary
+        and internationalist and hold that nonindustrial societies are incapable
+        of achieving socialism.
+      </dd>
+      <dt>Eco-Marxism: NaN%</dt>
+      <dd>
+        Eco-Marxism is a form of Orthodox Marxism more commonly found in the
+        modern day that places a particular emphasis on environmental issues.
+        Eco-Marxists generally favor central economic planning as a way of
+        combating climate issues.
+      </dd>
+      <dt>Centrist Marxism: NaN%</dt>
+      <dd>
+        Centrist Marxism is a form of Marxism that adopts Marxist views on
+        society and the economy while also refraining from taking a definitive
+        position on revolution and reformism. Many Centrist Marxists may also be
+        more nationalistic than other Marxists.
+      </dd>
+      <dt>Council Communism: NaN%</dt>
+      <dd>
+        Council Communism is a form of Left Communism that emerged in Germany
+        and Holland in the early-20th century. Council Communists reject
+        participation in liberal democracy, support spontaneous revolutions, and
+        believe in disempowering political parties in favor of the workers'
+        councils.
+      </dd>
+      <dt>Left Communism: NaN%</dt>
+      <dd>
+        Left Communism is a form of Marxism that leans towards so called
+        ultra-left positions. These include unconditional support for revolution
+        and internationalism, a rejection of unions and participation in liberal
+        democracy, and a rejection of national liberation and
+        self-determination.
+      </dd>
+      <dt>Anarcho-Communism: NaN%</dt>
+      <dd>
+        Anarcho-Communism is a form of anarchism that advocates for the
+        abolition of capitalism and the state, as well as the collective
+        ownership of the means of production. Anarcho-Communists support a
+        decentralized economy and government, with Anarcho-Syndicalism being a
+        common way of organizing such a society.
+      </dd>
+      <dt>Eco-Anarchism: NaN%</dt>
+      <dd>
+        Eco-Anarchism, or Green Anarchism, is a form of anarchism that places a
+        particular emphasis on environmental issues. It is often linked to more
+        distinct ideologies such as Anarcho-Syndicalism. Eco-Anarchists are
+        generally revolutionary and support using a decentralized egalitarian
+        economy to achieve environmental goals.
+      </dd>
+      <dt>Market Anarchism: NaN%</dt>
+      <dd>
+        Market Anarchism is a form of anarchism that mixes anarchist goals such
+        as the abolition of hierarchy, the state and capitalism with heightened
+        individualism and a moderate reformist approach. This should not be
+        confused with Anarcho-Capitalism.
+      </dd>
+      <dt>Utopian Socialism: NaN%</dt>
+      <dd>
+        Utopian Socialism is a form of pre-Marxist socialism that believes
+        highly in an egalitarian, moralistic and idealistic foundation for a
+        socialist society. Utopian Socialists generally reject violent
+        revolution and often believe the ruling class can be convinced to adopt
+        socialism.
+      </dd>
+      <dt>Democratic Socialism: NaN%</dt>
+      <dd>
+        Democratic Socialism is a form of socialism that seeks to utilize
+        liberal democracy as a means to achieve a socialist economy and society.
+        Democratic Socialists reject revolution and a centrally planned economy,
+        instead supporting moderate social ownership in the form of publicly
+        owned utilities and democratic workplace self-management.
+      </dd>
+      <dt>Social Democracy: NaN%</dt>
+      <dd>
+        Social Democracy is a centre-left ideology that advocates for mixing
+        left-leaning values such as social welfare and corporate regulation with
+        capitalism and liberal democracy in the form of a mixed economy. Many
+        modern Social Democrats favor Keynesian economics.
+      </dd>
+      <dt>Left-Wing Nationalism: NaN%</dt>
+      <dd>
+        Left-Wing Nationalism is an ideology that mixes left-wing economics with
+        non-xenophobic nationalism and patriotism. Many Left-Wing Nationalists
+        are simultaneously supportive of international solidarity, and may be
+        supportive of armed struggle.
+      </dd>
+    </dl>
+
+    <h2 data-i18n="result_h2_score">I don't like my scores!</h2>
+    <p data-i18n="result_issues">
+      Please remember that you are not intended to get a 100% score in any of
+      the categories. The point of the quiz is to challenge your views. If you
+      have any suggestions or constructive criticism please fill out this
+      <a href="https://forms.gle/6WZYMb5GXkkDLhxr5">short form</a> or open an
+      issue on the
+      <a href="https://github.com/LeftValues/leftvalues.github.io"
+        >GitHub Page</a
+      >.
+    </p>
+    <hr />
+    <canvas
+      id="banner"
+      width="800"
+      height="1000"
+      style="font-family: Montserrat"
+    ></canvas>
+    <button
+      data-i18n="result_back"
+      class="button"
+      onclick="location.href='index.html';"
+      style="
+        background-color: rgb(33, 150, 243);
+        --darkreader-inline-bgcolor: #0a65ad;
+      "
+      data-darkreader-inline-bgcolor=""
+    >
+      Back
+    </button>
+    <br />
+    <!-- Privacy respecting Statcounter code for LeftValues http://leftvalues.github.io -->
+    <script type="text/javascript">
+      var sc_project = 12079783;
+      var sc_invisible = 1;
+      var sc_security = "fa5443fa";
+      var sc_https = 1;
+      if (navigator.doNotTrack != 1) {
+        var statcounterscript = document.createElement("script");
+        statcounterscript.setAttribute("type", "text/javascript");
+        statcounterscript.setAttribute(
+          "src",
+          "https://www.statcounter.com/counter/counter.js"
+        );
+        document.getElementsByTagName("body")[0].appendChild(statcounterscript);
+      }
+    </script>
+    <!-- End of Statcounter Code -->
+    <!-- JavaScript for the test itself -->
+    <script
+      type="application/javascript"
+      src="LeftValues%20Results_files/i18n.js"
+    ></script>
+    <script>
+      /* global i18n, loadTranslation, ideologies */
+      function getQueryVariable(variable) {
+        var query = window.location.search.substring(1);
+        var vars = query.split("&");
+        for (var i = 0; i < vars.length; i++) {
+          var pair = vars[i].split("=");
+          if (pair[0] === variable) {
+            return pair[1];
+          }
+        }
+        return NaN;
+      }
+
+      function setBarValue(name, value) {
+        const innerel = document.getElementById(name);
+        const outerel = document.getElementById("bar-" + name);
+        outerel.style.width = value + "%";
+        innerel.innerHTML = value + "%";
+        if (innerel.offsetWidth + 20 > outerel.offsetWidth) {
+          innerel.style.visibility = "hidden";
+        }
+      }
+
+      function setLabel(val, ary) {
+        ary = ary.split(",");
+        if (val > 100) {
+          return "";
+        } else if (val > 90) {
+          return ary[0];
+        } else if (val > 75) {
+          return ary[1];
+        } else if (val > 60) {
+          return ary[2];
+        } else if (val >= 40) {
+          return ary[3];
+        } else if (val >= 25) {
+          return ary[4];
+        } else if (val >= 10) {
+          return ary[5];
+        } else if (val >= 0) {
+          return ary[6];
+        } else {
+          return "";
+        }
+      }
+
+      function getIdeologyNameByIndex(name) {
+        return i18n.getString(`ideology_${name}_name`);
+      }
+
+      function getIdeologyDescriptionByIndex(name) {
+        return i18n.getString(`ideology_${name}_desc`);
+      }
+
+      const revolution = getQueryVariable("a");
+      const scientific = getQueryVariable("b");
+      const central = getQueryVariable("c");
+      const international = getQueryVariable("d");
+      const party = getQueryVariable("e");
+      const industry = getQueryVariable("f");
+      const conservative = getQueryVariable("g");
+      const reform = (100 - revolution).toFixed(1);
+      const utopian = (100 - scientific).toFixed(1);
+      const decentral = (100 - central).toFixed(1);
+      const national = (100 - international).toFixed(1);
+      const union = (100 - party).toFixed(1);
+      const ecology = (100 - industry).toFixed(1);
+      const progressive = (100 - conservative).toFixed(1);
+
+      setBarValue("revolution", revolution);
+      setBarValue("reform", reform);
+      setBarValue("utopian", utopian);
+      setBarValue("scientific", scientific);
+      setBarValue("central", central);
+      setBarValue("decentral", decentral);
+      setBarValue("national", national);
+      setBarValue("international", international);
+      setBarValue("party", party);
+      setBarValue("union", union);
+      setBarValue("industry", industry);
+      setBarValue("ecology", ecology);
+      setBarValue("conservative", conservative);
+      setBarValue("progressive", progressive);
+
+      loadTranslation().then(() => {
+        document.getElementById("a-label").innerHTML = setLabel(
+          revolution,
+          i18n.getString("result_a_label")
+        );
+        document.getElementById("b-label").innerHTML = setLabel(
+          scientific,
+          i18n.getString("result_b_label")
+        );
+        document.getElementById("c-label").innerHTML = setLabel(
+          central,
+          i18n.getString("result_c_label")
+        );
+        document.getElementById("d-label").innerHTML = setLabel(
+          international,
+          i18n.getString("result_d_label")
+        );
+        document.getElementById("e-label").innerHTML = setLabel(
+          party,
+          i18n.getString("result_e_label")
+        );
+        document.getElementById("f-label").innerHTML = setLabel(
+          industry,
+          i18n.getString("result_f_label")
+        );
+        document.getElementById("g-label").innerHTML = setLabel(
+          conservative,
+          i18n.getString("result_g_label")
+        );
+
+        let ideology = "";
+        let ideodesc = "";
+        const ideologyIndexAndDistance = [];
+        var closestMatch = {};
+
+        let index = 0;
+        for (const name of Object.keys(ideologies)) {
+          let dist = 0;
+          dist += Math.pow(Math.abs(ideologies[name].a - revolution), 2);
+          dist += Math.pow(Math.abs(ideologies[name].c - central), 2);
+          dist += Math.pow(Math.abs(ideologies[name].b - scientific), 2);
+          dist += Math.pow(Math.abs(ideologies[name].d - international), 2);
+          dist += Math.pow(Math.abs(ideologies[name].e - party), 2);
+          dist += Math.pow(Math.abs(ideologies[name].f - industry), 2);
+          dist += Math.pow(Math.abs(ideologies[name].g - conservative), 2);
+
+          // ideologyToDistance[name] = dist
+          ideologyIndexAndDistance.push({
+            distance: dist,
+            name,
+            index,
+          });
+          index++;
+        }
+
+        ideologyIndexAndDistance.sort(function (a, b) {
+          return a.distance - b.distance;
+        });
+
+        const distances = ideologyIndexAndDistance.map(function (
+          indexAndDistance
+        ) {
+          return indexAndDistance.distance;
+        });
+
+        const closestDistance = distances[0];
+        const farthestDistance = distances[distances.length - 1];
+        const distanceSpan = farthestDistance - closestDistance;
+
+        closestMatch = ideologyIndexAndDistance[0];
+        document.getElementById(
+          "ideology-label"
+        ).innerHTML = getIdeologyNameByIndex(closestMatch.name);
+        document.getElementById(
+          "ideodesc-label"
+        ).innerHTML = getIdeologyDescriptionByIndex(closestMatch.name);
+
+        const nextMatches = document.getElementById("next-matches");
+        nextMatches.innerHTML = ideologyIndexAndDistance
+          .slice(1)
+          .map(function (indexAndDistance) {
+            const name = indexAndDistance.name;
+            ideology = getIdeologyNameByIndex(name);
+            ideodesc = getIdeologyDescriptionByIndex(name);
+            const relativeDistance =
+              1 - (indexAndDistance.distance - closestDistance) / distanceSpan;
+            const relativeDistancePercent =
+              Math.round(relativeDistance * 1000) / 10;
+            return (
+              "<dt>" +
+              ideology +
+              ": " +
+              relativeDistancePercent +
+              "%</dt>" +
+              "<dd>" +
+              ideodesc +
+              "</dd>"
+            );
+          })
+          .join("\n");
+
+        const c = document.getElementById("banner");
+        const ctx = c.getContext("2d");
+        ctx.fillStyle = "#EEEEEE";
+        ctx.fillRect(0, 0, 800, 1000);
+
+        let img = document.getElementById("img-revolution");
+        ctx.drawImage(img, 20, 170, 100, 100);
+        img = document.getElementById("img-reform");
+        ctx.drawImage(img, 680, 170, 100, 100);
+        img = document.getElementById("img-scientific");
+        ctx.drawImage(img, 20, 290, 100, 100);
+        img = document.getElementById("img-utopian");
+        ctx.drawImage(img, 680, 290, 100, 100);
+        img = document.getElementById("img-central");
+        ctx.drawImage(img, 20, 410, 100, 100);
+        img = document.getElementById("img-decentral");
+        ctx.drawImage(img, 680, 410, 100, 100);
+        img = document.getElementById("img-international");
+        ctx.drawImage(img, 20, 530, 100, 100);
+        img = document.getElementById("img-national");
+        ctx.drawImage(img, 680, 530, 100, 100);
+        img = document.getElementById("img-party");
+        ctx.drawImage(img, 20, 650, 100, 100);
+        img = document.getElementById("img-union");
+        ctx.drawImage(img, 680, 650, 100, 100);
+        img = document.getElementById("img-industry");
+        ctx.drawImage(img, 20, 770, 100, 100);
+        img = document.getElementById("img-ecology");
+        ctx.drawImage(img, 680, 770, 100, 100);
+        img = document.getElementById("img-conservative");
+        ctx.drawImage(img, 20, 890, 100, 100);
+        img = document.getElementById("img-progressive");
+        ctx.drawImage(img, 680, 890, 100, 100);
+
+        ctx.fillStyle = "#222222";
+        ctx.fillRect(120, 180, 560, 80);
+        ctx.fillRect(120, 300, 560, 80);
+        ctx.fillRect(120, 420, 560, 80);
+        ctx.fillRect(120, 540, 560, 80);
+        ctx.fillRect(120, 660, 560, 80);
+        ctx.fillRect(120, 780, 560, 80);
+        ctx.fillRect(120, 900, 560, 80);
+        ctx.fillStyle = "#890000";
+        ctx.fillRect(120, 184, 5.6 * revolution - 2, 72);
+        ctx.fillStyle = "#FC5959";
+        ctx.fillRect(682 - 5.6 * reform, 184, 5.6 * reform - 2, 72);
+        ctx.fillStyle = "#88232B";
+        ctx.fillRect(120, 304, 5.6 * scientific - 2, 72);
+        ctx.fillStyle = "#7F0037";
+        ctx.fillRect(682 - 5.6 * utopian, 304, 5.6 * utopian - 2, 72);
+        ctx.fillStyle = "#560000";
+        ctx.fillRect(120, 424, 5.6 * central - 2, 72);
+        ctx.fillStyle = "#000000";
+        ctx.fillRect(682 - 5.6 * decentral, 424, 5.6 * decentral - 2, 72);
+        ctx.fillStyle = "#782F52";
+        ctx.fillRect(120, 544, 5.6 * international - 2, 72);
+        ctx.fillStyle = "#7F3300";
+        ctx.fillRect(682 - 5.6 * national, 544, 5.6 * national - 2, 72);
+        ctx.fillStyle = "#963B33";
+        ctx.fillRect(120, 664, 5.6 * party - 2, 72);
+        ctx.fillStyle = "#7F333B";
+        ctx.fillRect(682 - 5.6 * union, 664, 5.6 * union - 2, 72);
+        ctx.fillStyle = "#804E00";
+        ctx.fillRect(120, 784, 5.6 * industry - 2, 72);
+        ctx.fillStyle = "#76890B";
+        ctx.fillRect(682 - 5.6 * ecology, 784, 5.6 * ecology - 2, 72);
+        ctx.fillStyle = "#27577A";
+        ctx.fillRect(120, 904, 5.6 * conservative - 2, 72);
+        ctx.fillStyle = "#C4A717";
+        ctx.fillRect(682 - 5.6 * progressive, 904, 5.6 * progressive - 2, 72);
+        ctx.fillStyle = "#222222";
+        ctx.font = "700 80px Montserrat";
+        ctx.textAlign = "left";
+        ctx.fillText("LeftValues", 20, 90);
+        ctx.font = "50px Montserrat";
+        ctx.fillText(getIdeologyNameByIndex(closestMatch.name), 20, 140);
+
+        ctx.fillStyle = "#dddddd";
+        ctx.textAlign = "left";
+        if (revolution > 30) {
+          ctx.fillText(revolution + "%", 130, 237.5);
+        }
+        if (scientific > 30) {
+          ctx.fillText(scientific + "%", 130, 357.5);
+        }
+        if (central > 30) {
+          ctx.fillText(central + "%", 130, 477.5);
+        }
+        if (international > 30) {
+          ctx.fillText(international + "%", 130, 597.5);
+        }
+        if (party > 30) {
+          ctx.fillText(party + "%", 130, 717.5);
+        }
+        if (industry > 30) {
+          ctx.fillText(industry + "%", 130, 837.5);
+        }
+        if (conservative > 30) {
+          ctx.fillText(conservative + "%", 130, 957.5);
+        }
+        ctx.textAlign = "right";
+        if (reform > 30) {
+          ctx.fillText(reform + "%", 670, 237.5);
+        }
+        if (utopian > 30) {
+          ctx.fillText(utopian + "%", 670, 357.5);
+        }
+        if (decentral > 30) {
+          ctx.fillText(decentral + "%", 670, 477.5);
+        }
+        if (national > 30) {
+          ctx.fillText(national + "%", 670, 597.5);
+        }
+        if (union > 30) {
+          ctx.fillText(union + "%", 670, 717.5);
+        }
+        if (ecology > 30) {
+          ctx.fillText(ecology + "%", 670, 837.5);
+        }
+        if (progressive > 30) {
+          ctx.fillText(progressive + "%", 670, 957.5);
+        }
+
+        ctx.fillStyle = "#222222";
+        ctx.font = "300 30px Montserrat";
+        ctx.fillText("leftvalues.github.io", 780, 60);
+        ctx.textAlign = "center";
+        ctx.fillText(
+          "" + document.getElementById("a-label").innerHTML,
+          400,
+          175
+        );
+        ctx.fillText(
+          "" + document.getElementById("b-label").innerHTML,
+          400,
+          295
+        );
+        ctx.fillText(
+          "" + document.getElementById("c-label").innerHTML,
+          400,
+          415
+        );
+        ctx.fillText(
+          "" + document.getElementById("d-label").innerHTML,
+          400,
+          535
+        );
+        ctx.fillText(
+          "" + document.getElementById("e-label").innerHTML,
+          400,
+          655
+        );
+        ctx.fillText(
+          "" + document.getElementById("f-label").innerHTML,
+          400,
+          775
+        );
+        ctx.fillText(
+          "" + document.getElementById("g-label").innerHTML,
+          400,
+          895
+        );
+      });
+    </script>
+  </body>
+</html>
